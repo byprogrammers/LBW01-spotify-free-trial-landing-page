@@ -1,0 +1,382 @@
+/* ==============Global============== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*:focus {
+    outline:none;
+}
+
+html,body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ================Variables================ */
+
+:root {
+    /* theme color */
+    --dark-green: #008060;
+    --white: #fff;
+    --light-gray: #6B7177;
+    --light-gray1: #D2D5D9;
+    --dark-gray: #131416;
+    --dark-gray1: #212326;
+}
+
+/* =================Site Header================= */
+
+main .site-header {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background-color: var(--dark-green);
+    text-align: center;
+}
+
+main .site-header .logo {
+    width: 120px;
+    margin-top: 30px;
+}
+
+main .site-header .title h1 {
+    margin-top: 55px;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+main .site-header .title p {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+main .site-header .free-trial-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+main .site-header .free-trial-form input {
+    width: 25%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+main .site-header .free-trial-form button {
+    height: 50px;
+    margin-left: 20px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+main .site-header .note {
+    width: 35%;
+    margin: 30px auto;
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+main .site-header img {
+    position: relative;
+    width: 50%;
+    z-index: 1000;
+}
+
+main .site-header .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* ===================Site Feature=================== */
+
+main .site-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1000px;
+    margin: 8% auto;
+    padding: 3% 0;
+}
+
+main .site-feature div {
+    width: 85%;
+}
+
+main .site-feature div img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+main .site-feature div h3 {
+    margin-top: 20px;
+    color: var(--dark-gray1);
+}
+
+main .site-feature div p {
+    margin-top: 20px;
+    color: var(--light-gray);
+    font-weight: 300;
+}
+
+/* ===============Brand=============== */
+
+main .site-brand {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    margin: 40px auto;
+    width: 1000px;
+    justify-content: center;
+    border: 1px solid var(--light-gray1);
+    border-right: none;
+    border-left: none;
+}
+
+main .site-brand .brand-img {
+    width: 90px;
+    margin: 20px 10px;
+}
+
+/* ================Quote================ */
+
+main .site-quote {
+    margin: 100px auto;
+    text-align: center;
+    width: 800px;
+}
+
+main .site-quote h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+main .site-quote p {
+    margin-top: 30px;
+    color: var(--dark-gray1);
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+main .site-quote button {
+    height: 50px;
+    margin-top: 50px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--dark-green);
+}
+
+/* ==============Footer============== */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px auto;
+    width: 1000px;
+}
+
+footer a {
+    margin-right: 15px;
+    color: var(--dark-green);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/* ===============Media=============== */
+
+@media(max-width: 1242px) {
+
+    /* Header */
+
+    main .site-header .free-trial-form {
+        flex-direction: column;
+    }
+
+    main .site-header .free-trial-form input {
+        width: 40%;
+    }
+
+    main .site-header .free-trial-form button {
+        height: 50px;
+        width: 40%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width: 1080px) {
+
+    /* Header */
+
+    main .site-header .title h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    main .site-header .title p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    main .site-header img {
+        width: 65%;
+    }
+
+    main .site-header .free-trial-form {
+        flex-direction: row;
+    }
+
+    main .site-header .free-trial-form input {
+        width: 40%;
+    }
+
+    main .site-header .free-trial-form button {
+        height: 50px;
+        width: auto;
+        margin-top: 0;
+        margin-left: 20px;
+        padding: 0 30px;
+    }
+
+    /* Feature */
+
+    main .site-feature {
+        width: 700px;
+    }
+
+    /* Brand */
+
+    main .site-brand {
+        width: 700px;
+    }
+
+    /* Quote */
+
+    main .site-quote {
+        width: 600px;
+    }
+
+    main .site-quote h1 {
+        font-size: 1.3em;
+    }
+
+    /* Footer */
+
+    footer {
+        width: 700px;
+    }
+
+}
+
+@media(max-width: 750px) {
+
+    /* Header */
+
+    main .site-header {
+        height: 90vh;
+    }
+    
+    main .site-header .free-trial-form input {
+        width: 70%;
+    }
+
+    main .site-header .note {
+        width: 80%;
+    }
+
+    main .site-header img {
+        width: 60%;
+    }
+
+    /* Feature */
+
+    main .site-feature {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    main .site-feature div {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    main .site-feature div img {
+        width: 40px;
+    }
+
+    /* Brand */
+
+    main .site-brand {
+        width: 90%;
+    }
+
+    main .site-brand .brand-img {
+        width: 110px;
+    }
+
+    /* Quote */
+
+    main .site-quote {
+        width: 90%;
+    }
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+}
+
+@media(max-width: 484px) {
+
+    /* Header */
+
+    main .site-header .free-trial-form {
+        flex-direction: column;
+    }
+
+    main .site-header .free-trial-form input {
+        width: 90%;
+    }
+
+    main .site-header .free-trial-form button {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+}
